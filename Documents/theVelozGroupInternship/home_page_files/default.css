@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8" />
+<title>The page you requested cannot be found!</title>
+
+	
+		 <style type="text/css">
+		 .break { clear:both; }
+		 
+		 /* SEARCH FORM */
+		 #searchform { margin:50px 200px; font-size:18px; }
+		 #searchform div { color:#eeeeee; }
+		 #searchform div input { font-size:18px; padding:5px; width:320px; }
+		 #suggestions{ position: relative; z-index:5; width:220px; display:none; }
+		 
+		 /* SEARCHRESULTS */
+		 #searchresults { border-width:1px; border-color:#919191; border-style:solid; width:208px; background-color:#a0a0a0; font-size:10px; line-height:14px; }
+		 #searchresults a { display:block; background-color:#e4e4e4; clear:left; height:56px; text-decoration:none; }
+		 #searchresults a:hover { background-color:#b7b7b7; color:#ffffff; }
+		 #searchresults a img { float:left; padding-right: 5px; }
+		 #searchresults a span.searchheading { display:block;padding:5px; color:#191919; font-size:12px; }
+		 #searchresults a:hover span.searchheading { color:#ffffff; }
+		 #searchresults a span { color:#555555; }
+		 #searchresults a:hover span { color:#f1f1f1; }
+		 #searchresults span.category { font-size:8px; margin:5px; display:block; color:#ffffff; }
+		 #searchresults span.seperator { float:right; padding-right:15px; margin-right:5px;
+		 background-image:url(catalog/view/javascript/search/images/shortcuts_arrow.gif); background-repeat:no-repeat; background-position:right; }
+		 #searchresults span.seperator a { background-color:transparent; display:block; margin:5px; height:auto; color:#ffffff; }
+		 </style>
+
+		 <script type="text/javascript">
+		 /** Author:      Marco Kuiper (http://www.marcofolio.net/)*/
+		 google.load("jquery", "1.3.1");
+		 google.setOnLoadCallback(function()
+		 {
+		 // Safely inject CSS3 and give the search results a shadow
+		 var cssObj = { 'box-shadow' : '#888 5px 10px 10px', // Added when CSS3 is standard
+		 '-webkit-box-shadow' : '#888 5px 10px 10px', // Safari
+		 '-moz-box-shadow' : '#888 5px 10px 10px'}; // Firefox 3.5+
+		 $("#suggestions").css(cssObj);
+		 
+		 // Fade out the suggestions box when not active
+		 $("input").blur(function(){
+		 $('#suggestions').fadeOut(); //hide
+		 });
+		 });
+		 
+		 function lookup(inputString) { 
+		 if(inputString.length == 0) {
+		 $('#suggestions').fadeOut(); // Hide the suggestions box
+		 } else {
+		 $.post("/catalog/view/javascript/search/rpc.php", {queryString: ""+inputString+""}, function(data) { // Do an AJAX call
+		 $('#suggestions').fadeIn(); // Show the suggestions box
+		 $('#suggestions').html(data); // Fill the suggestions box
+		 });
+		 }
+		 }
+		 </script>
+	
+
+
+      
+<base href="http://trisha.dev.thevelozgroup.com/" />
+<link href="http://trisha.dev.thevelozgroup.com/image/data/Site/Logo.png" rel="icon" />
+<link href='http://fonts.googleapis.com/css?family=Share:700' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Share' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:700' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/helios/stylesheet/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/helios/stylesheet/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/helios/stylesheet/default.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/helios/stylesheet/carousel22.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/external/jquery.cookie.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery.jcarousel.min22.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery.cycle.js"></script>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/helios/stylesheet/ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/helios/stylesheet/ie6.css" />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26802829-1']);
+  _gaq.push(['_setDomainName', 'beverlyhillschairs.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></head>
+<body>
+<div id="wrapper">
+<div id="header">
+    <div id="logo"><a href="http://trisha.dev.thevelozgroup.com/"><img src="http://trisha.dev.thevelozgroup.com/image/data/beverlyHillsLogo.jpg" title="Beverly Hills Chairs" alt="Beverly Hills Chairs" /></a></div>
+        <div id="cart">
+  <div class="heading">
+    <h4>Shopping Cart<a><span id="cart-total">0 item(s) - $0.00</span></a></h4>
+    </div>
+  <div class="content">
+        <div class="empty">Your shopping cart is empty!</div>
+      </div>
+</div>
+  
+  <div id="welcome">
+	<!-- NOTE: These links are hard coded. -->
+	<!--<a href="/index.php?route=account/login">Login</a>
+	<a href="/index.php?route=account/register">Register</a> 
+    	    	Welcome visitor you can <a href="http://trisha.dev.thevelozgroup.com/login">login</a> or <a href="http://trisha.dev.thevelozgroup.com/create-account">create an account</a>.    	-->
+    	
+  </div>
+  <div class="links">
+	<!--<a href="http://trisha.dev.thevelozgroup.com/">Home</a>-->
+	<a href="/index.php?route=account/login">Login</a>
+	<a href="/index.php?route=account/register">Register</a>
+	<a href="http://trisha.dev.thevelozgroup.com/shopping-cart">Shopping Cart</a>
+	<!--<a href="http://trisha.dev.thevelozgroup.com/my-account">My Account</a>
+	<a href="http://trisha.dev.thevelozgroup.com/wishlist" id="wishlist-total">Wish List (0)</a>
+	<a href="http://trisha.dev.thevelozgroup.com/checkout">Checkout</a>-->
+  </div>
+  </div> <!-- #header (end) -->
+
+
+<div id="menu-wrapper">
+														<div id="menu">
+  											<ul>
+											      <!--<li><a href="/herman-miller-chairs">Herman Miller</a>
+												<div><ul>
+
+												    <li><a href="/about-herman-miller-aeron-chairs">About Herman Miller Aeron</a> </li>
+												    <li><a href="/about-herman-miller-mirra-chairs">About Herman Miller Mirra</a> </li>
+												    <li><a href="/herman-miller-chairs">Shop Herman Miller Chairs</a> </li>
+
+
+												  </ul>
+												</div>-->
+
+   									    										<li><a href="http://trisha.dev.thevelozgroup.com/chairs">Seating</a>
+      											      												<div>
+        												        													<ul>
+         													          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/chairs/all-office-chairs">All Office Chairs</a></li>
+          														          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/chairs/herman-miller-chairs">Herman Miller Chairs</a></li>
+          														          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/chairs/leather-executive-chairs">Leather &amp; Executive</a></li>
+          														          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/chairs/Ergonomic-Mesh-Office-Chairs">Ergonomic &amp; Mesh</a></li>
+          														          													       										 				</ul>
+        												        													<ul>
+         													          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/chairs/Conference-Seating-Chairs-Chair">Conference Seating</a></li>
+          														          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/chairs/Drafting-Stools-Office-Chairs">Drafting Stools</a></li>
+          														          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/chairs/Reception-Convention-Seating">Reception and Convention</a></li>
+          														          													          														          													       										 				</ul>
+        												      												</div>
+     											       										</li>
+    									    										<li><a href="http://trisha.dev.thevelozgroup.com/desks">Desks</a>
+      											    										</li>
+    									    										<li><a href="http://trisha.dev.thevelozgroup.com/parts-and-accessories">Accessories</a>
+      											      												<div>
+        												        													<ul>
+         													          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/parts-and-accessories/herman-miller-aeron-parts">Herman Miller Aeron Parts</a></li>
+          														          													          														         														<li><a href="http://trisha.dev.thevelozgroup.com/parts-and-accessories/maintenance-products">Maintenance Products</a></li>
+          														          													       										 				</ul>
+        												      												</div>
+     											       										</li>
+    									  											</ul>
+									  	</div> <!-- menu (end) -->
+									<div id="menu2">
+<ul>
+		<li><a href="/bhc-advantage">BHC Advantage</a></li>
+		<li><a href="/clients">Clients</a> 
+		
+		<li><a href="/about-us">About Us</a> <!--add about us tag in nav-bar by lixuan-->
+		<div style>
+			<ul>
+				<li><a href="/design-center">Design Center</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/team">Team</a></li>
+			</ul>	
+</ul>
+</div>
+  <div id="site_search">
+            <a id="show_search" class="s_search_button" href="javascript:;" title="Search"></a>
+            <div id="search_bar">
+              
+	
+		 <input id="filter_keyword" type="text" onkeyup="lookup(this.value);" name="filter_name" title="Search" />
+	
+      
+              <div class="button-search"></div>
+            </div>
+
+	
+		 <div id="suggestions"></div>
+	
+      
+    </div>
+								
+</div> <!-- #menu-wrapper -->
+
+				
+<div id="notification"></div>				
+<div id="main">
+ 
+<div id="column-right">
+    <div class="box-right-sidecart" id="sidecart"> 
+    <div class="box-right-sidecart-heading">Shopping Cart</div>  
+	<div class="box-right-sidecart-content">
+       <div class="empty">Your shopping cart is empty!</div>
+    
+  
+  </div>
+</div>
+    <div class="box-right">
+  <div class="box-right-heading">Categories</div>
+  <div class="box-content">
+    <div class="box-category">
+      <ul>
+                <li>
+                    <a href="http://trisha.dev.thevelozgroup.com/chairs">+&nbsp;&nbsp;Seating <span class="product-count"></span></a> 
+                              <ul>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/chairs/all-office-chairs"> - All Office Chairs</a>
+                          </li>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/chairs/herman-miller-chairs"> - Herman Miller Chairs</a>
+                          </li>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/chairs/leather-executive-chairs"> - Leather &amp; Executive</a>
+                          </li>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/chairs/Ergonomic-Mesh-Office-Chairs"> - Ergonomic &amp; Mesh</a>
+                          </li>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/chairs/Conference-Seating-Chairs-Chair"> - Conference Seating</a>
+                          </li>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/chairs/Drafting-Stools-Office-Chairs"> - Drafting Stools</a>
+                          </li>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/chairs/Reception-Convention-Seating"> - Reception and Convention</a>
+                          </li>
+                      </ul>
+                  </li>
+                <li>
+                    <a href="http://trisha.dev.thevelozgroup.com/desks">+&nbsp;&nbsp;Desks <span class="product-count"></span></a> 
+                            </li>
+                <li>
+                    <a href="http://trisha.dev.thevelozgroup.com/parts-and-accessories">+&nbsp;&nbsp;Accessories <span class="product-count"></span></a> 
+                              <ul>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/parts-and-accessories/herman-miller-aeron-parts"> - Herman Miller Aeron Parts</a>
+                          </li>
+                        <li>
+                            <a href="http://trisha.dev.thevelozgroup.com/parts-and-accessories/maintenance-products"> - Maintenance Products</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+    </div>
+  </div>
+</div>
+      
+ 
+	<div class="box-right-featured">
+    <div class="box-right-featured-heading">Featured</div>
+  <div class="box-right-featured-content">
+    <div class="box-right-featured-product">
+            <div>
+	  
+                <div class="image"><a href="http://trisha.dev.thevelozgroup.com/herman-miller-aeron-fully-loaded-chair"><img src="http://trisha.dev.thevelozgroup.com/image/cache/data/Products/Chairs/Herman-Miller/Aeron/Loaded/herman-miller-aeron-loaded-chair1-80x80.jpg" alt="Herman Miller Aeron Fully Loaded Chair" /></a></div>
+                <div class="name"><a href="http://trisha.dev.thevelozgroup.com/herman-miller-aeron-fully-loaded-chair">Herman Miller Aeron Fully Loaded Chair</a></div>
+                <div class="price">
+                    <span class="price-old">$949.99</span> <span class="price-new">$549.99</span>
+                  </div>
+              </div>
+	  <div class="box-border"> </div>
+            <div>
+	  
+                <div class="image"><a href="http://trisha.dev.thevelozgroup.com/Zuo-Harlow-office-chair"><img src="http://trisha.dev.thevelozgroup.com/image/cache/data/Ergohuman 1-80x80.jpg" alt="Harlow Office Chair" /></a></div>
+                <div class="name"><a href="http://trisha.dev.thevelozgroup.com/Zuo-Harlow-office-chair">Harlow Office Chair</a></div>
+                <div class="price">
+                    $679.99                  </div>
+              </div>
+	  <div class="box-border"> </div>
+            <div>
+	  
+                <div class="image"><a href="http://trisha.dev.thevelozgroup.com/index.php?route=product/product&amp;product_id=116"><img src="http://trisha.dev.thevelozgroup.com/image/cache/data/Products/Desks/Black-Executive-Business-Desk-80x80.jpg" alt="Beverly Hills Black Executive Desk" /></a></div>
+                <div class="name"><a href="http://trisha.dev.thevelozgroup.com/index.php?route=product/product&amp;product_id=116">Beverly Hills Black Executive Desk</a></div>
+                <div class="price">
+                    <span class="price-old">$279.99</span> <span class="price-new">$135.00</span>
+                  </div>
+              </div>
+	  <div class="box-border"> </div>
+            <div>
+	  
+                <div class="image"><a href="http://trisha.dev.thevelozgroup.com/index.php?route=product/product&amp;product_id=117"><img src="http://trisha.dev.thevelozgroup.com/image/cache/data/Products/Desks/White-Elbow-Space-Enhancing-Desk-1-80x80.jpg" alt="Beverly Hills Gray Modern-L Desk" /></a></div>
+                <div class="name"><a href="http://trisha.dev.thevelozgroup.com/index.php?route=product/product&amp;product_id=117">Beverly Hills Gray Modern-L Desk</a></div>
+                <div class="price">
+                    <span class="price-old">$279.99</span> <span class="price-new">$135.00</span>
+                  </div>
+              </div>
+	  <div class="box-border"> </div>
+          </div>
+  </div>
+</div>
+ 
+ 
+
+
+    <div class="box-right-newsletter">
+  <div class="box-right-newsletter-heading">NewsLetter</div>
+  <div class="box-content" style="text-align: center;">
+  
+
+
+  <div id="site_subcribe">
+			<form  id="subscribe" action="#"   />
+			<div class="heading">Please enter your email<br/></div>
+			<div class="holder">
+			<a onclick="email_subscribe()" class="button-s">Go</a>
+			<input type="text" value="" name="subscribe_email" id="subscribe_email" />
+			<br/>
+			<br/>
+			<span style="text-align: left; display:block;" id="subscribe_result"></span>
+			</div>
+			
+		</div>
+  
+  </div>
+
+
+</div>
+
+<script type="text/javascript">
+
+function email_subscribe(){
+	$.ajax({
+			type: 'post',
+			url: 'index.php?route=module/newslettersubscribe/subscribe',
+			dataType: 'html',
+            data:$("#subscribe").serialize(),
+			success: function (html) {
+				eval(html);
+			}}); 
+}
+$('.fancybox_sub').fancybox({
+	width: 180,
+	height: 180,
+	autoDimensions: false
+});
+</script>
+    <div class="box-right-social">
+
+		<div class="box-right-social-content">
+				<div class="box-right-social-product">
+					
+										<div>
+						<div class="image"><a href="http://www.facebook.com/BeverlyHillsChairs"  target="_blank"> <img src="image/data/Social-Media/facebook-icon.png" title="Facebook"/> </a></div>
+						<div class="name"><a href="http://www.facebook.com/BeverlyHillsChairs"  target="_blank">Like us on Facebook</a></div>
+					</div>
+										
+										<div>
+						<div class="image"><a href="http://www.twitter.com/BevHillsChairs"  target="_blank"> <img src="image/data/Social-Media/twitter-icon.png" title="Twitter"/> </a></div>
+						<div class="name"><a href="http://www.twitter.com/BevHillsChairs"  target="_blank">Follow us on Twitter</a></div>
+					</div>
+										
+										
+										
+										
+										
+					   <div>
+                                                <div class="image"><a href="http://www.youtube.com/user/BeverlyHillsChairs" target="_blank"><img src="image/data/Social-Media/youtube-icon.png"></a></div>
+                                                <div class="name"><a href="http://www.youtube.com/user/BeverlyHillsChairs" target="_blank">Watch us on YouTube</a></div>
+                                        </div>
+
+					
+					
+
+				</div>
+		</div>
+
+
+		
+					
+</div>					
+
+
+  </div>
+<div id="content"><div id="banner0" class="banner" >
+      <div><a href="http://www.beverlyhillschairs.com/chairs/Zuo%20Lider%20Hi%20Back%20Office%20Chair"><img src="http://trisha.dev.thevelozgroup.com/image/cache/data/2-1-1000x100.jpg" alt="Lider chairs" title="Lider chairs" /></a></div>
+        <div><a href="http://www.beverlyhillschairs.com/herman-miller-aeron-fully-loaded-chair"><img src="http://trisha.dev.thevelozgroup.com/image/cache/data/BHC_banner_sit like a boss-1000x100.jpg" alt="sit like a boss" title="sit like a boss" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+$(document).ready(function() {
+	$('#banner0 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	$('#banner0').cycle({
+		before: function(current, next) {
+			$(next).parent().height($(next).outerHeight());
+		},
+		timeout:7000
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script>
+  <div class="breadcrumb">
+        <a href="http://trisha.dev.thevelozgroup.com/">Home</a>
+         &raquo; <a href="http://trisha.dev.thevelozgroup.com/index.php?route=">The page you requested cannot be found!</a>
+      </div>
+  <h1>The page you requested cannot be found!</h1>
+  <div class="content">The page you requested cannot be found.</div>
+  <div class="buttons">
+    <div class="right"><a href="http://trisha.dev.thevelozgroup.com/" class="button">Continue</a></div>
+  </div>
+  </div>
+</div> 
+
+
+<div id="footer">
+<div id="bottomwrapper">
+
+  <div class="footer-area">
+	<div class="footer-wrapper">
+    	<div class="footer-holder">
+    	
+    	<!-- information column -->
+    	 		
+ 		
+ 		<!-- contact us column -->
+ 				
+		<!-- twitter column -->
+ 		 		
+ 		 		
+		
+ 		
+        
+	</div> <!-- footer-holder (end) -->
+			
+	<!-- DEFAULT FOOTER -->
+		<div class="footer-default">
+	  <div class="column">
+  	    <div id="powered">
+	      <div id="site-by">
+  	        <a href="http://www.thevelozgroup.com">
+   		   Established & Operated by the Veloz Group  		</a>
+		</div>
+ 		&copy 2013 <a href="http://trisha.dev.thevelozgroup.com/">Beverly Hills Chairs</a>. All Rights Reserved.	</div>
+  	</div>	
+<div class="column">
+	<div id="site-by">
+		<a href="http://www.thevelozgroup.com"><img src="/image/data/Site/veloz.png" alt="The Veloz Group"/></a>
+	</div>
+</div>	 
+  
+ <div class="column">
+      <a href="/terms-and-conditions">Terms of Use</a>&nbsp | &nbsp<a href="/privacy-policy">Privacy Policy</a>&nbsp | &nbsp<a href="http://trisha.dev.thevelozgroup.com/sitemap">Site Map</a><br />	      <a href="/wholesale-opportunities">Wholesale</a>&nbsp | &nbsp<a href="/servicing-and-repairs">Service & Repairs</a>&nbsp | &nbsp<a href="/sell-and-trade-ins">Sell & Trade-Ins</a>
+</div>
+
+<div class="column">
+     <table>
+     <tr>
+     <td><a href="http://www.facebook.com/BeverlyHillsChairs" target="_blank"><img src="/image/data/Social-Media/facebook-icon.png"/></a></td>
+     <td><a href="http://twitter.com/BevHillsChairs" target="_blank"><img src="/image/data/Social-Media/twitter-icon.png"/></a></td>
+     <td><a href="http://www.youtube.com/user/BeverlyHillsChairs" target="_blank"><img src="/image/data/Social-Media/youtube-icon.png"/></a></td>
+     </tr>
+     </table>
+</div>
+
+<div class="column">
+   	 <div class="box-about-us">
+              <div class="box-about-us-contact">
+                 <div id="about-us-text">
+                        <p>
+                                325 North Maple Drive #607
+                                <br />Beverly Hills, CA 90210
+                        </p>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="column">
+	<img src="/image/data/Site/BeverlyHills/BeverlyHills_logo.jpg"/>
+</div>
+
+<div class="column">
+	(424) CHAIR-80<br />
+	<a href="mailto:gm@beverlyhillschairs.com">gm@beverlyhillschairs.com</a><br />
+</div>
+	</div> <!-- footer-default (end) -->
+
+  
+
+    	</div> <!-- footer-wrapper (end) -->
+		
+		
+    </div><!-- footer-area (end) -->
+
+
+
+
+</div>  <!-- #footer_bottom (end) -->
+
+	 <div id="second_footer">
+ 
+<!--  <div id="powered">&copy;Copyright 2011. Powered by <a class="blue" href="http://www.opencart.com">OpenCart.</a>&nbsp;&nbsp;Designed by<a href="http://themeglobal.com" class="tg-helios-footer-heading"> ThemeGlobal</a>-->
+ 
+  
+ </div>
+ 
+ 
+
+ </div>
+

@@ -1,0 +1,90 @@
+.jcarousel22-skin-opencart .jcarousel22-container {
+	width: 1230px;
+	margin-left: -20px;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	overflow:hidden;
+	background: #ffffff;
+}
+.jcarousel22-skin-opencart .jcarousel22-direction-rtl {
+	direction: rtl;
+}
+.jcarousel22-skin-opencart .jcarousel22-container-horizontal {
+	
+}
+.jcarousel22-skin-opencart .jcarousel22-clip {
+	overflow: hidden;
+	width: 100%;
+}
+.jcarousel22-skin-opencart .jcarousel22-clip-horizontal {
+}
+.jcarousel22-skin-opencart .jcarousel22-item {
+	width: 220px!important;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 26px!important;
+}
+.jcarousel22-skin-opencart .jcarousel22-item:hover {
+	background: #F3F3F3!important;
+	border-radius:3px 3px 3px 3px;
+}
+.jcarousel22-skin-opencart .jcarousel22-item-horizontal {
+	margin-left: 0;
+	margin-right: 10px;
+}
+.jcarousel22-skin-opencart .jcarousel22-direction-rtl .jcarousel22-item-horizontal {
+	margin-left: 10px;
+	margin-right: 0;
+}
+.jcarousel22-skin-opencart .jcarousel22-item-placeholder {
+	background: #fff;
+	color: #000;
+}
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel22-skin-opencart .jcarousel22-next-horizontal {
+	position: absolute;
+	top: 163px;
+	right: -20px;
+	width: 20px;
+	height: 41px;
+	cursor: pointer;
+	background: url('../image/featurednew-next.png') center no-repeat;
+}
+.jcarousel22-skin-opencart .jcarousel22-direction-rtl .jcarousel22-next-horizontal {
+	left: 5px;
+	right: auto;
+	background: url('../image/button-previous.png') center no-repeat;
+}
+.jcarousel22-skin-opencart .jcarousel22-next-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-next-horizontal:focus {
+}
+.jcarousel22-skin-opencart .jcarousel22-next-horizontal:active {
+}
+.jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:focus, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:active {
+	cursor: default;
+	background: url('../image/featurednew-next.png') center no-repeat;
+}
+.jcarousel22-skin-opencart .jcarousel22-prev-horizontal {
+	position: absolute;
+	top: 163px;
+	left: -20px;
+	width: 20px;
+	height: 41px;
+	cursor: pointer;
+	background: url('../image/featurednew-prev.png') center no-repeat;
+}
+.jcarousel22-skin-opencart .jcarousel22-direction-rtl .jcarousel22-prev-horizontal {
+	left: auto;
+	right: 0px;
+	background: url('../image/button-next.png') center no-repeat!important;
+}
+.jcarousel22-skin-opencart .jcarousel22-prev-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-prev-horizontal:focus {
+}
+.jcarousel22-skin-opencart .jcarousel22-prev-horizontal:active {
+}
+.jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:focus, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:active {
+	cursor: default;
+	background: url('../image/featurednew-prev.png') center no-repeat;
+}

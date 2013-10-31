@@ -1,0 +1,100 @@
+body {
+	background: url("../image/blue/background.png") repeat;
+}
+a, a:visited, a b {
+	color: #00a0c7;
+}
+#wrapper, #menu-wrapper, #main, .success, .warning, .attention, .box-right-product .image img, .box-left-product .image img, #footer   {
+    box-shadow: none;
+}
+#header #welcome a, #currency a b, #currency a:hover, .mini-cart-info td a, 
+.product-grid .wishlist a:hover, .product-grid .compare a:hover, .box-right-featured-product .name a:hover, #header .links a:hover, #currency a:hover, .product-list .wishlist a:hover, 
+.product-list .compare a:hover, .product-info .cart a:hover, .product-info .review a:hover, .htabs a:hover, .product-grid .name a:hover, .product-list .name a:hover, .tg-helios-module-heading, 
+.tg-helios-footer-heading, #twitter li span a, .box-right-featured-product .price, .box-category > ul > li a.active , .box-category > ul > li a:hover, .pagination .links b,
+.success a, .warning a, .attention a, .information a , .product-info .description a, .textquantity, .htabs a.selected
+{
+	color: #00a0c7!important;
+}
+.breadcrumb a:hover{
+	color: #00a0c7!important;
+}
+a.button:hover, input.button:hover {
+	background-color: #00a0c7;
+}	
+.pagination .links b, .product-info .image-additional img:hover {
+    border: 1px solid #00a0c7;
+}
+.pagination .links a:hover {
+	border: 1px solid #00a0c7;
+	color: #00a0c7;
+}	
+
+#menu > ul > li:hover {
+	background: #00a0c7;
+}
+#menu > ul > li > div {
+	border: 3px #00a0c7 solid;
+}
+
+.button-search {
+    background: url("../image/blue/search-b.png") no-repeat scroll center center transparent;
+}
+.nivo-directionNav a:hover {
+	background:url('../image/blue/nivo-prev-hover.png') no-repeat;
+}
+a.nivo-nextNav:hover {
+	background:url('../image/blue/nivo-next-hover.png') no-repeat;
+}	
+
+.box-right .box-right-heading, .box-left .box-left-heading, .box .box-heading, .banner-name, .box-right-featured .box-right-featured-heading, .box-right-sidecart .box-right-sidecart-heading  {
+	background-image: url("../image/blue/bullet.png");
+}	
+
+.jcarousel33-skin-opencart .jcarousel33-next-horizontal {
+    background: url("../image/blue/featured-next-clickable.png") no-repeat scroll center center transparent!important;
+}
+.jcarousel33-skin-opencart .jcarousel33-prev-horizontal {
+    background: url("../image/blue/featured-prev-clickable.png") no-repeat scroll center center transparent!important;
+}	
+
+.box-right-newsletter {
+    background: none repeat scroll 0 0 #00a0c7;
+}	
+
+.box-right-social {
+    background: none repeat scroll 0 0 #0187a7;
+}
+.box-right-social-product .name a, .box-right-social-product .name {
+	color: #FFFFFF;
+}
+#grid_b {
+    background: url("../image/blue/grid_b.png") no-repeat scroll 0 0 transparent;
+}
+#list_b {
+    background: url("../image/blue/list_b.png") no-repeat scroll 0 0 transparent;
+}
+
+#grid_a:hover {
+    background: url("../image/blue/grid_b.png") no-repeat scroll 0 0 transparent;
+}
+#list_a:hover {
+    background: url("../image/blue/list_b.png") no-repeat scroll 0 0 transparent;
+}
+.jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:focus, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:active {
+    background: url("../image/blue/featurednew-prev.png") no-repeat scroll center center transparent !important;
+}
+
+.jcarousel22-skin-opencart .jcarousel22-prev-horizontal {
+    background: url("../image/blue/featurednew-prev.png") no-repeat scroll center center transparent!important;
+}
+
+.jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:focus, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:active {
+    background: url("../image/blue/featurednew-next.png") no-repeat scroll center center transparent !important;
+}
+.jcarousel22-skin-opencart .jcarousel22-next-horizontal {
+    background: url("../image/blue/featurednew-next.png") no-repeat scroll center center transparent!important;
+}
+
+.facebook-icon:hover, .twitter-icon:hover, .google-icon:hover, .pinterest-icon:hover, .youtube-icon:hover{
+	background-color: #00a0c7;
+}

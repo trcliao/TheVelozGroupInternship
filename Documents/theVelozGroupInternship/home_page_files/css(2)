@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Aldrich';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aldrich'), url(http://themes.googleusercontent.com/static/fonts/aldrich/v3/Y0zWA9-hxl3_xvcxN-VXfA.woff) format('woff');
+}

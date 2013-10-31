@@ -1,0 +1,99 @@
+body {
+	background: url("../image/green/background.png") repeat;
+}
+a, a:visited, a b {
+	color: #78b13c;
+}
+#wrapper, #menu-wrapper, #main, .success, .warning, .attention, .box-right-product .image img, .box-left-product .image img, #footer   {
+    box-shadow: none;
+}
+#header #welcome a, #currency a b, #currency a:hover, .mini-cart-info td a, 
+.product-grid .wishlist a:hover, .product-grid .compare a:hover, .box-right-featured-product .name a:hover, #header .links a:hover, #currency a:hover, .product-list .wishlist a:hover, 
+.product-list .compare a:hover, .product-info .cart a:hover, .product-info .review a:hover, .htabs a:hover, .product-grid .name a:hover, .product-list .name a:hover, .tg-helios-module-heading, 
+.tg-helios-footer-heading, #twitter li span a, .box-right-featured-product .price, .box-category > ul > li a.active , .box-category > ul > li a:hover, .pagination .links b,
+.success a, .warning a, .attention a, .information a , .product-info .description a, .textquantity, .htabs a.selected
+{
+	color: #78b13c!important;
+}
+.breadcrumb a:hover{
+	color: #78b13c!important;
+}
+a.button:hover, input.button:hover {
+	background-color: #78b13c;
+}	
+.pagination .links b, .product-info .image-additional img:hover {
+    border: 1px solid #78b13c;
+}
+.pagination .links a:hover {
+	border: 1px solid #78b13c;
+	color: #78b13c;
+}	
+
+#menu > ul > li:hover {
+	background: #78b13c;
+}
+#menu > ul > li > div {
+	border: 3px #78b13c solid;
+}
+
+.button-search {
+    background: url("../image/green/search-b.png") no-repeat scroll center center transparent;
+}
+.nivo-directionNav a:hover {
+	background:url('../image/green/nivo-prev-hover.png') no-repeat;
+}
+a.nivo-nextNav:hover {
+	background:url('../image/green/nivo-next-hover.png') no-repeat;
+}	
+
+.box-right .box-right-heading, .box-left .box-left-heading, .box .box-heading, .banner-name, .box-right-featured .box-right-featured-heading, .box-right-sidecart .box-right-sidecart-heading  {
+	background-image: url("../image/green/bullet.png");
+}	
+
+.jcarousel33-skin-opencart .jcarousel33-next-horizontal {
+    background: url("../image/green/featured-next-clickable.png") no-repeat scroll center center transparent!important;
+}
+.jcarousel33-skin-opencart .jcarousel33-prev-horizontal {
+    background: url("../image/green/featured-prev-clickable.png") no-repeat scroll center center transparent!important;
+}	
+
+.box-right-newsletter {
+    background: none repeat scroll 0 0 #78b13c;
+}	
+
+.box-right-social {
+    background: none repeat scroll 0 0 #578526;
+}
+.box-right-social-product .name a, .box-right-social-product .name {
+	color: #FFFFFF;
+}
+#grid_b {
+    background: url("../image/green/grid_b.png") no-repeat scroll 0 0 transparent;
+}
+#list_b {
+    background: url("../image/green/list_b.png") no-repeat scroll 0 0 transparent;
+}
+
+#grid_a:hover {
+    background: url("../image/green/grid_b.png") no-repeat scroll 0 0 transparent;
+}
+#list_a:hover {
+    background: url("../image/green/list_b.png") no-repeat scroll 0 0 transparent;
+}
+.jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:focus, .jcarousel22-skin-opencart .jcarousel22-prev-disabled-horizontal:active {
+    background: url("../image/green/featurednew-prev.png") no-repeat scroll center center transparent !important;
+}
+
+.jcarousel22-skin-opencart .jcarousel22-prev-horizontal {
+    background: url("../image/green/featurednew-prev.png") no-repeat scroll center center transparent!important;
+}
+
+.jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:hover, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:focus, .jcarousel22-skin-opencart .jcarousel22-next-disabled-horizontal:active {
+    background: url("../image/green/featurednew-next.png") no-repeat scroll center center transparent !important;
+}
+.jcarousel22-skin-opencart .jcarousel22-next-horizontal {
+    background: url("../image/green/featurednew-next.png") no-repeat scroll center center transparent!important;
+}
+.facebook-icon:hover, .twitter-icon:hover, .google-icon:hover, .pinterest-icon:hover, .youtube-icon:hover{
+	background-color: #78b13c;
+}

@@ -1,0 +1,13 @@
+#mcs5_container{}
+#mcs5_container .customScrollBox{position:relative; overflow:hidden;margin-left: auto; margin-right: auto;}
+#mcs5_container .customScrollBox .horWrapper{position:relative; left:0;}
+#mcs5_container .customScrollBox .container{position:relative; left:0; display:inline-block; *display:inline;}
+#mcs5_container .customScrollBox .content{clear:both;}
+#mcs5_container .customScrollBox .content p{padding:5px; margin:0 5px;}
+#mcs5_container .customScrollBox .content p img{margin-right:5px;}
+#mcs5_container .dragger_container{position:relative; height:0px;  margin:10px; margin-left: 0px; margin-right: 0px;border-top:1px solid #e1e1e1;}
+#mcs5_container .dragger{position:absolute; width:55px; height:9px; background:#000000; margin-top:-5px;cursor: pointer;-webkit-border-radius: 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-khtml-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;}
+#mcs5_container .dragger_pressed{position:absolute; width:55px; height:9px; background:#111 url(mcsDraggerHover.png) no-repeat; margin-top:-5px;}
